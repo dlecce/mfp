@@ -6,7 +6,7 @@ import Pricing from './components/Pricing';
 
 export default function App() {
   const generateClassName = createGenerateClassName({
-    productionPrefix: 'marketing',
+    productionPrefix: 'marketing-prefix',
   });
 
   return (
