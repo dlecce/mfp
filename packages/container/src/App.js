@@ -9,6 +9,7 @@ import Progress from './components/Progress';
 const MarketingApp = lazy(() => import('./components/MarketingApp'));
 const AuthApp = lazy(() => import('./components/AuthApp'));
 const DashboardApp = lazy(() => import('./components/DashboardApp'));
+const NewsApp = lazy(() => import('./components/NewsApp'));
 
 const history = createBrowserHistory();
 
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/auth">
               <AuthApp onSignIn={() => setIsSignedIn(true)} />
             </Route>
+            <Route path="/news" component={NewsApp} />
             <Route path="/dashboard">
               {!isSignedIn && <Redirect to="/" />}
               <DashboardApp />

@@ -1,0 +1,30 @@
+h1 {
+  font-family: skytext, sans-serif;
+}
+
+button {
+  font-family: skytext, sans-serif;
+  font-weight: bold;
+  background-color: #0072ce;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.news-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-family: skytext, sans-serif;
+
+  h2 {
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}

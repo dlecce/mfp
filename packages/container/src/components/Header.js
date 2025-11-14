@@ -25,6 +25,11 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'space-between',
   },
+  toolbarLeft: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: theme.spacing(2),
+  },
   link: {
     margin: theme.spacing(1, 1.5),
   },
@@ -73,15 +78,26 @@ export default function Header({ isSignedIn, onSignOut }) {
         className={classes.appBar}
       >
         <Toolbar className={classes.toolbar}>
-          <Typography
-            variant="h6"
-            color="inherit"
-            noWrap
-            component={RouterLink}
-            to="/"
-          >
-            App
-          </Typography>
+          <div className={classes.toolbarLeft}>
+            <Typography
+              variant="h6"
+              color="inherit"
+              noWrap
+              component={RouterLink}
+              to="/"
+            >
+              App
+            </Typography>
+            <Typography
+              variant="h6"
+              color="inherit"
+              noWrap
+              component={RouterLink}
+              to="/news"
+            >
+              News
+            </Typography>
+          </div>
           <Button
             color="primary"
             variant="outlined"
